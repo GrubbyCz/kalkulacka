@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kalkulacka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="715" Width="400">
+        Title="MainWindow" Height="735" Width="415">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -23,22 +23,22 @@
             <RowDefinition Height="100"/>
 
         </Grid.RowDefinitions>
-        <Button Content="0" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" FontFamily="Wide Latin"/>
+        <Button Content="0" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" Click="Button_Click_0" FontFamily="Wide Latin"/>
 
-        <Button Content="1" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="60" FontFamily="Wide Latin"/>
-        <Button Content="2" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" FontFamily="Wide Latin"/>
-        <Button Content="3" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" FontFamily="Wide Latin"/>
+        <Button Content="1" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="60" Click="Button_Click_1" FontFamily="Wide Latin"/>
+        <Button Content="2" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" Click="Button_Click_2" FontFamily="Wide Latin"/>
+        <Button Content="3" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" Click="Button_Click_3" FontFamily="Wide Latin"/>
 
-        <Button Content="4" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="60" FontFamily="Wide Latin"/>
-        <Button Content="5" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" FontFamily="Wide Latin"/>
-        <Button Content="6" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" FontFamily="Wide Latin"/>
+        <Button Content="4" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="60" Click="Button_Click_4" FontFamily="Wide Latin"/>
+        <Button Content="5" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" Click="Button_Click_5" FontFamily="Wide Latin"/>
+        <Button Content="6" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" Click="Button_Click_6" FontFamily="Wide Latin"/>
 
-        <Button Content="7" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="60" FontFamily="Wide Latin"/>
-        <Button Content="8" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" FontFamily="Wide Latin"/>
-        <Button Content="9" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" FontFamily="Wide Latin"/>
+        <Button Content="7" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="60" Click="Button_Click_7" FontFamily="Wide Latin"/>
+        <Button Content="8" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="60" Click="Button_Click_8" FontFamily="Wide Latin"/>
+        <Button Content="9" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" Click="Button_Click_9" FontFamily="Wide Latin"/>
 
         <Button Content="+/-" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="40" FontFamily="Wide Latin"/>
-        <Button Content="," HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" FontFamily="Wide Latin"/>
+        <Button Content="," HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="60" Click="Button_Click_cara" FontFamily="Wide Latin"/>
         <Button Content="=" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="3" FontSize="80" FontFamily="Wide Latin" Background="#FF7D84F3"/>
         <Button Content="+" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="3" FontSize="60" FontFamily="Wide Latin"/>
         <Button Content="-" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="3" FontSize="60" FontFamily="Wide Latin"/>
@@ -47,7 +47,11 @@
         <Button Content="x²" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="30" FontFamily="Wide Latin"/>
         <Button Content="¹/x" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="30" FontFamily="Wide Latin"/>
         <Button Content="√" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="40" FontFamily="Wide Latin"/>
-        
+        <Button Content="%" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="0" FontSize="40" FontFamily="Wide Latin"/>
+        <Button Content="CE" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="1" FontSize="30" FontFamily="Wide Latin"/>
+        <Button Content="C" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="2" FontSize="40" Click="Button_Click_C" FontFamily="Wide Latin"/>
+        <Button Content="⇐" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="90" Width="90" Margin="0,0,0,0" Grid.Column="3" FontSize="40" Click="Button_Click_zpet" FontFamily="Wide Latin"/>
+        <TextBlock Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="80" Margin="5,0,0,0" TextWrapping="Wrap" Name="textik" Text="" VerticalAlignment="Center" Width="385" FontSize="70" TextAlignment="Right"/>
     </Grid>
     
 </Window>
