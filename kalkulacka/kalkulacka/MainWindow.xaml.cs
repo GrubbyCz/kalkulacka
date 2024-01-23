@@ -23,14 +23,20 @@ namespace kalkulacka
 
         private string currentInput = "";
         private string currentOperator = "";
-
+        private double result = 0.0;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-
+        private void Operator_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            currentOperator = button.Content.ToString();
+            result = double.Parse(currentInput);
+            currentInput = "";
+        }
 
         private void Button_Click_0(object sender, RoutedEventArgs e)
         {
@@ -101,9 +107,32 @@ namespace kalkulacka
         }
         
         private void Calculator()
+        {
 
-            switch (currentOperator)
+            double operand = double.Parse(currentInput);
+            switch (currenOperator)
             {
+                case "+":
+                    result += operand;
+                    break;
+                case "-":
+                    result -= operand;
+                    break;
+                case "*":
+                    result *= operand;
+                    break;
+                case "/":
+                    if (operand != 0)
+                        result /= operand;
+                    else
+                        textik.Text = "Error";
+                    break;
+            }
+
+        }
+            
+        
+            
 
 
         private void Button_Click_nadruhou(object sender, RoutedEventArgs e)
