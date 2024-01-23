@@ -20,11 +20,18 @@ namespace kalkulacka
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private string currentInput = "";
+        private string currentOperator = "";
+
+
         public MainWindow()
         {
             InitializeComponent();
         }
-        
+
+
+
         private void Button_Click_0(object sender, RoutedEventArgs e)
         {
             textik.Text = textik.Text + "0";
@@ -75,16 +82,35 @@ namespace kalkulacka
         {
             textik.Text = "";
         }
+
         private void Button_Click_cara(object sender, RoutedEventArgs e)
         {
-            textik.Text = textik.Text + ",";
+            string hodnota = textik.Text;
+            Boolean Found = false;
+            for (int i = 0; i < hodnota.Length; i++)
+            {
+                if (hodnota[i] == ',')
+                {
+                    Found = true;
+                }
+            }
+            if (!Found)
+            {
+                textik.Text += ",";
+            }
         }
+        
+        private void Calculator()
+
+            switch (currentOperator)
+            {
 
 
-
-
-
-
+        private void Button_Click_nadruhou(object sender, RoutedEventArgs e)
+        {
+            double cislo = double.Parse(textik.Text);
+            textik.Text = (cislo*cislo).ToString();
+        }
 
 
 
